@@ -1,9 +1,7 @@
 #include <stdio.h>
 
 /**
- * 0-9 putchar
- *
- * main- Print 0-9
+ * main - Entry point
  *
  * Return: Always 0 (Success)
  */
