@@ -7,8 +7,8 @@
  */
 int main()
 {
-
-    for(int x = 'a'; x <= 'z'; x++)
+char x;
+    for(x = 'a'; x <= 'z'; x++)
 {
     putchar(x);
 }
