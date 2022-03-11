@@ -3,7 +3,6 @@
 #include <stdio.h>
 
 /**
- * if else statements
  * main - Entry point
  *
  * Return: Always 0 (Success)
