@@ -3,7 +3,7 @@
 /**
  * 0-9 putchar
  *
- * main- Entry point
+ * main- Print 0-9
  *
  * Return: Always 0 (Success)
  */
