@@ -7,12 +7,15 @@
  */
 int main(void)
 {
-	int a;
+	char a;
 
-	for (a = 0; a < 10; a++)
+	for (a = 'a'; a <= 'z'; a++)
 	{
-		putchar((a % 10) + '0');
+		if (a != 'e' && a != 'q')
+			putchar(a);
 	}
+
 	putchar('\n');
+
 	return (0);
 }
