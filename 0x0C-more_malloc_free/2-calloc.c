@@ -10,20 +10,25 @@
  * Return: If nmemb = 0, size = 0, or the function fails - NULL.
  *         Otherwise - a pointer to the allocated memory.
  */
+void *_calloc(unsigned int nmemb, unsigned int size);
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int *s;
+	void *mem;
+	char *filler;
+	unsigned int index;
 
 	if (nmemb == 0 || size == 0)
-	{
 		return (NULL);
-	}
-	s = malloc(nmemb * size);
-	if (s == NULL)
-	{
+
+	mem = malloc(size * nmemb);
+
+	if (mem == NULL)
 		return (NULL);
-	}
-	else
-		return (s);
-	free(s);
+
+	filler = mem;
+
+	for (index = 0; index < (size * nmemb); index++)
+		filler[index] = '\0';
+
+	return (mem);
 }
